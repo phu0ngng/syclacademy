@@ -44,7 +44,7 @@ method of synchronization and copy back.
 For DPC++:
 
 ```sh
-icpx -fsycl -o sycl-ex-7 -I../External/Catch2/single_include ../Code_Exercises/Exercise_7_ND_Range_Kernel/source.cpp
+icpx -fsycl -o sycl-ex-7 -I ../../External/Catch2/single_include source.cpp
 ./sycl-ex-7
 ```
 
@@ -58,7 +58,6 @@ make exercise_7
 ```
 alternatively, without CMake:
 ```sh
-cd Code_Exercises/Exercise_7_ND_Range_Kernel
-/path/to/adaptivecpp/bin/acpp -o sycl-ex-7 -I../../External/Catch2/single_include --acpp-targets="<target specification>" source.cpp
+/path/to/adaptivecpp/bin/acpp -o sycl-ex-7 -I ../../External/Catch2/single_include --acpp-targets="<target specification>" source.cpp
 ./sycl-ex-7
 ```
